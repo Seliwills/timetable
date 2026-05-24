@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:table_calendar/table_calendar.dart';
 import '../models/models.dart';
 import '../providers/providers.dart';
-import '../utils/theme.dart';
+import '../utils/theme.dart' hide isSameDay;
 import '../widgets/entry_card.dart';
 import '../widgets/task_card.dart';
 import '../widgets/add_task_sheet.dart';

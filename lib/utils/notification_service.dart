@@ -1,4 +1,5 @@
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart' hide Priority;
+import 'package:flutter_local_notifications/flutter_local_notifications.dart' as fln;
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest_all.dart' as tzdata;
 import '../models/models.dart';
@@ -130,7 +131,7 @@ class NotificationService {
           channel.toLowerCase().replaceAll(' ', '_'),
           channel,
           importance: Importance.high,
-          priority: Priority.high,
+          priority: fln.Priority.high,
         ),
         iOS: const DarwinNotificationDetails(),
       );

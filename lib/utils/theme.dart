@@ -13,7 +13,7 @@ class AppTheme {
         brightness: Brightness.light,
         fontFamily: 'Roboto',
         appBarTheme: const AppBarTheme(centerTitle: false, elevation: 0),
-        cardTheme: CardTheme(
+        cardTheme: CardThemeData(
           elevation: 0,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
@@ -32,7 +32,7 @@ class AppTheme {
         brightness: Brightness.dark,
         fontFamily: 'Roboto',
         appBarTheme: const AppBarTheme(centerTitle: false, elevation: 0),
-        cardTheme: CardTheme(
+        cardTheme: CardThemeData(
           elevation: 0,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
